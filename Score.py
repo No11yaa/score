@@ -11,8 +11,10 @@ scores = input().split()
 fail = 0
 max = 0
 min = 100
+total = 0
 
 for i in range(0, len(scores)):
+  total+=int(scores[i])
   if (int(scores[i]) < 60):
     fail += 1
   if (int(scores[i]) > max):
@@ -21,4 +23,6 @@ for i in range(0, len(scores)):
     min = int(scores[i])
 
 print("不及格的數量為：{}".format(fail))
+print(f"平均為{total/len(scores)}")
 print("max:{} min:{}".format(max,min))
+
