@@ -15,3 +15,10 @@ for i in range(0, len(scores)):
     fail += 1
 
 print("不及格的數量為：{}".format(fail))
+
+
+total = 0
+for i in range(len(scores)):
+    total+=int(scores[i])
+
+print(f"平均為{total/len(scores)}")
